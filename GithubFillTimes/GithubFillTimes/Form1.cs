@@ -36,7 +36,7 @@ namespace GithubFillTimes
                 Process p = new Process();
                 p.StartInfo.FileName = "runme.bat";
                 p.Start();
-
+                p.WaitForExit();
 
                 Thread.Sleep(300);
                 break;
@@ -66,7 +66,7 @@ namespace GithubFillTimes
             sb.AppendLine("cd ../../../../");
             sb.AppendLine("git add .");
             sb.AppendLine("git commit --date=\"" + time + " + 0800 \" -am \"提交" + time + "\"");
-
+            sb.AppendLine("pause");
             writeBat(sb.ToString());
         }
 
