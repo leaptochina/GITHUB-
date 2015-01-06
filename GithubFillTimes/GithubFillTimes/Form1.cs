@@ -25,6 +25,7 @@ namespace GithubFillTimes
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DateTime dt = new DateTime();
             //修改文件
             do
             {
@@ -38,11 +39,12 @@ namespace GithubFillTimes
                 p.Start();
                 p.WaitForExit();
 
-                Thread.Sleep(300);
-                break;
+                Thread.Sleep(10);
+                dt = dateTimePicker1.Value;
 
 
-            } while (true);
+
+            } while (dt < new DateTime(2019, 3, 1) );
            
 
 
