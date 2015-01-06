@@ -1,1 +1,9 @@
 D:\Me\VS\Github_fill_history\GithubFillTimes\GithubFillTimes\bin\Debug\GithubFillTimes.exe.config
+D:\Me\VS\Github_fill_history\GithubFillTimes\GithubFillTimes\bin\Debug\GithubFillTimes.exe
+D:\Me\VS\Github_fill_history\GithubFillTimes\GithubFillTimes\bin\Debug\GithubFillTimes.pdb
+D:\Me\VS\Github_fill_history\GithubFillTimes\GithubFillTimes\obj\Debug\GithubFillTimes.csprojResolveAssemblyReference.cache
+D:\Me\VS\Github_fill_history\GithubFillTimes\GithubFillTimes\obj\Debug\GithubFillTimes.Form1.resources
+D:\Me\VS\Github_fill_history\GithubFillTimes\GithubFillTimes\obj\Debug\GithubFillTimes.Properties.Resources.resources
+D:\Me\VS\Github_fill_history\GithubFillTimes\GithubFillTimes\obj\Debug\GithubFillTimes.csproj.GenerateResource.Cache
+D:\Me\VS\Github_fill_history\GithubFillTimes\GithubFillTimes\obj\Debug\GithubFillTimes.exe
+D:\Me\VS\Github_fill_history\GithubFillTimes\GithubFillTimes\obj\Debug\GithubFillTimes.pdb
