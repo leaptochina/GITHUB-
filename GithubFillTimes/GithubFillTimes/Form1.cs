@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -24,12 +26,37 @@ namespace GithubFillTimes
         private void button1_Click(object sender, EventArgs e)
         {
             //修改文件
+            do
+            {
+                string time = getTime();
+                write(time);
+                submit(time);
+                updateDatetime();
 
-            string time = getTime();
-            write(time);
-            submit(time);
+                Process p = new Process();
+                p.StartInfo.FileName = "runme.bat";
+                p.Start();
 
 
+                Thread.Sleep(300);
+                break;
+
+
+            } while (true);
+           
+
+
+        }
+
+        private void updateDatetime()
+        {
+            int aDay = 3600 * 12 * 3;
+            Random rand = new Random();
+            int randResult = rand.Next(aDay);
+            DateTime oldTime = dateTimePicker1.Value;
+            DateTime newValue = oldTime.AddSeconds(randResult);
+
+            dateTimePicker1.Value = newValue;
 
         }
 
@@ -38,7 +65,7 @@ namespace GithubFillTimes
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("cd ../../../../");
             sb.AppendLine("git add .");
-            sb.AppendLine("git commit --date=\"" + time + " + 0800 \" -am \"初始提交\"");
+            sb.AppendLine("git commit --date=\"" + time + " + 0800 \" -am \"提交" + time + "\"");
 
             writeBat(sb.ToString());
         }
