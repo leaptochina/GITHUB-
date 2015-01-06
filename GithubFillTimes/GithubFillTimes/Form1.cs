@@ -68,7 +68,7 @@ namespace GithubFillTimes
             sb.AppendLine("cd ../../../../");
             sb.AppendLine("git add .");
             sb.AppendLine("git commit --date=\"" + time + " + 0800 \" -am \"提交" + time + "\"");
-            sb.AppendLine("pause");
+            //sb.AppendLine("pause");
             writeBat(sb.ToString());
         }
 
