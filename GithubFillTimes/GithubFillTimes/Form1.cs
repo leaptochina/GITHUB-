@@ -52,10 +52,30 @@ namespace GithubFillTimes
 
         private void updateDatetime()
         {
-            int aDay = 3600 * 12 * 3;
+            
             Random rand = new Random();
-            int randResult = rand.Next(aDay);
+        
             DateTime oldTime = dateTimePicker1.Value;
+
+            int randResult = 0;
+            double aDay = 0;
+            randResult = rand.Next(30);
+            if (randResult == 1) {
+                aDay = 3600 * 24 * 10;
+            }
+            else if (oldTime.DayOfWeek == DayOfWeek.Saturday)
+            {
+                aDay = 3600 * 24 * 2.5;
+            }
+            else if (oldTime.DayOfWeek == DayOfWeek.Sunday)
+            {
+                aDay = 3600 * 24 * 1.5;
+            }
+            else {
+                aDay = 3600 * 24 * 1.2;
+            }
+
+            randResult = rand.Next(Convert.ToInt32(aDay));
             DateTime newValue = oldTime.AddSeconds(randResult);
 
             dateTimePicker1.Value = newValue;
