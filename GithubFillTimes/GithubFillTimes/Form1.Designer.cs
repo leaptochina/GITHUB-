@@ -50,7 +50,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(294, 25);
             this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.Value = new System.DateTime(2015, 4, 16, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2015, 7, 20, 0, 0, 0, 0);
             // 
             // Form1
             // 

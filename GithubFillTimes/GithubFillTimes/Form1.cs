@@ -37,9 +37,10 @@ namespace GithubFillTimes
                 Process p = new Process();
                 p.StartInfo.FileName = "runme.bat";
                 p.Start();
+                p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
                 p.WaitForExit();
 
-                Thread.Sleep(10);
+               // Thread.Sleep(10);
                 dt = dateTimePicker1.Value;
 
 
