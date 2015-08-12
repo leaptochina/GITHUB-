@@ -1,4 +1,4 @@
 cd ../../../../
 git add .
-git commit --date="Aug 12 12:29:05 2015 + 0800 " -am "提交Aug 12 12:29:05 2015"
+git commit --date="Aug 13 00:00:55 2015 + 0800 " -am "提交Aug 13 00:00:55 2015"
 
