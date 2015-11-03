@@ -36,8 +36,8 @@ namespace GithubFillTimes
 
                 Process p = new Process();
                 p.StartInfo.FileName = "runme.bat";
-                p.Start();
                 p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                p.Start();
                 p.WaitForExit();
 
                // Thread.Sleep(10);
